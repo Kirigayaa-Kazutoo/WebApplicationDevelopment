@@ -1,0 +1,305 @@
+/* all page css for page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+body{
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+/* all body css */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+/* this is <div> css the <div> container it is contains all html code*/
+.register .container {
+    width: 750px;
+    background: rgba(255, 255, 255, -1);
+    border: 2px solid rgba(255, 255, 255, 2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2 );
+    border-radius: 10px;
+    color: white;
+    padding: 40px 35px 35px;
+    margin: 0 10px;
+
+}
+/* the <div> which is cover every html codes this is for for h1 in the conatiner*/
+.register .container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* conatiner and input, .input belongs to <div> which is include each line inputs*/
+.container .input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+/* inputs and inputfield, inputfields mean each inputs <div >*/
+.input .inputfield {
+    position: relative;
+    width: 48%;
+    height: 50p;
+    margin: 13px 0;
+}
+/* this codes belong to each input */
+.input .inputfield input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+
+.input .inputfield input::placeholder {
+    color: #fff;
+}
+
+/* this is dricetly icpns in inputs*/
+.input .inputfield i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 20px;
+}
+/* this is register button*/
+.container .registerbtn {
+    width: 100%;
+    height: 45px;
+}
+/* this code belong to accept terms label*/
+.container label{
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+    display: inline-block;
+    
+}
+/* this is accept terms check box */
+.container label input{
+    accent-color: #fff;
+    height: 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow:  0  0 10px rgba(0, 0, 0, -1);
+    cursor:  pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-right: 5px;
+}
+/* Header Start */
+.header .logo img {
+    width: 4rem;
+    height: 5rem;
+
+}
+
+/*------------------HEADER CANS PART------------------------------*/
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(255, 255, 255, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: white;
+    border-bottom: 0.1rem solid transparent;
+
+}
+/*alt cizgi */
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: white;
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    color: white;
+}
+
+.header .buttons button:hover {
+    color: orange;
+    transition: 0.1ms;
+}
+/*Header end */
+.footer {
+    background-color: #33383b;
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  
+  /* footer left*/
+  
+  .footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+  }
+  
+  .footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .icons {
+    margin-top: 25px;
+  }
+  
+  .footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* footer center*/
+  
+  .footer .footer-center {
+    width: 30%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+  }
+  
+  
+  /* footer right*/
+  
+  .footer .footer-right {
+    width: 35%;
+  }
+  
+  .footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer h2 span {
+    color: #0099ff;
+  }
+  
+  .footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer .menu a:hover {
+    color: #0099ff;
+  }
+  
+  .footer .name {
+    color: #0099ff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+   /*! footer end codes */
