@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+:root {
+    --main-color: black;
+    --orange-color: rgb(132, 86, 0);
+    --border: 0.1 rem solid rgba(255, 255, 255, 0.4);
+
+}
+html {
+    
+    font-size: 12px;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    
+}
+section {
+    padding: 3.5rem 7%;
+
+}
+body {
+    background-color: black;
+    height: 200vh;
+}
+.heading3{
+    color: black;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    background-color: white;
+
+}
+
+/*!  header start codes */
+.header .logo img {
+    width: 10rem;
+
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(255, 255, 255, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: black;
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+.header .buttons button:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+/**! header end codes */
+/**! member profile start  codes */
+
+
+.members{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.members .left{
+  width: 65%;
+  background: linear-gradient(to right,orange,white);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.members .left img{
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  margin-bottom: 10px;
+}
+.members .left img:hover{
+  border-radius: 50%;
+}
+
+.members .left h4{
+  margin-bottom: 10px;
+}
+
+.members .left p{
+  font-size: 15px;
+}
+
+.members .right{
+  width: 65%;
+  background: white;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.members .right .info{
+  margin-bottom: 25px;
+}
+
+.members .right .info h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.members .social_media ul{
+  display: flex;
+}
+
+.members .social_media ul li{
+  width: 60px;
+  height: 50px;
+  background: linear-gradient(to right,black,white);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.members .social_media ul a li {
+  color :white;
+  display: block;
+  font-size: 18px;
+}
+
+/**! member profile end  codes */
+
